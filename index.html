@@ -9,18 +9,21 @@
     <link rel="icon" type="image/png" id="fav-icon" href="./img/question-shield-64.png">
     <link rel="stylesheet" href="./style.css">
 
+    <script src="./js/html.js"></script>
+    <script src="./script.js"></script>
+
 </head>
 
-<body>
+<body onload="init(startQuestion)">
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1">MaksiQuiz</span>
         </div>
     </nav>
 
-    <div class="card-holder">
-        <div class="card">
-            <img src="./img/cardheader.png" class="card-img-top">
+    <div class="card-holder" id="card-holder">
+        <div class="card main-card">
+            <img src="./img/cardheader.png" class="card-img-top" onlclick="answer()">
             <div class="card-body">
                 <h5 class="card-title mb-3">Frage</h5>
 
@@ -50,7 +53,9 @@
 
                 <div class="card-footer">
                     <div class="progress">
-                        1/10
+                        <span>1</span>
+                        /
+                        <span>10</span>
                     </div>
 
                     <button class="btn btn-primary">NEXT</button>

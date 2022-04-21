@@ -4,6 +4,7 @@
     --bg-color: hsl(215, 88%, 11%);
     --main-color: #0a4498;
     --grey1-color: hsl(215, 10%, 32%);
+    --grey2-color: hsl(215, 10%, 90%);
 }
 
 body {
@@ -12,10 +13,21 @@ body {
 }
 
 .card-holder {
-    height: 100vh;
+    height: calc(100% - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main-card {
+    width: 40rem;
+    max-width: 100vw;
+    box-shadow: 3px 3px 15px #000;
+}
+
+.answer-card:hover {
+    cursor: pointer;
+    background-color: var(--grey2-color);
 }
 
 .card-footer {
