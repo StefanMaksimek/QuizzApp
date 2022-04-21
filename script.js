@@ -81,8 +81,6 @@ let questions = [
     }
 ]
 
-let answers = [];
-
 let startQuestion = 0;
 
 function init(i) {
@@ -105,9 +103,10 @@ function createCards(i) {
 }
 
 
+let answers = [];
+
 function answer([i, y]) {
     answers.push({"question": y, "answer": i});
-    let x = startQuestion + 1;
-    startQuestion = x;
-    createCards(startQuestion);
+    let x = y + 1;
+    createCards(x);
 }
