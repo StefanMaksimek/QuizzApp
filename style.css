@@ -33,7 +33,7 @@ body {
 
 .card-img-top img{
     height: 15rem;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .answer-card:hover {
