@@ -1,6 +1,7 @@
 
-function cardHolderHTML([q, a1, a2, a3, a4, currentQuestion]) {
-    let i = currentQuestion + 1;
+function cardHolderHTML(i) {
+    let q = questions[i].frage;
+    let y = i + 1;
     return `
         <div class="card main-card">
             <img src="./img/cardheader.png" class="card-img-top">
@@ -11,39 +12,41 @@ function cardHolderHTML([q, a1, a2, a3, a4, currentQuestion]) {
                     ${q}
                 </h5>
 
-                <div class="card mb-2 answer-card" onlclick="answer([${a1}, ${currentQuestion}])">
-                    <div class="card-body">
-                        ${a1}
-                    </div>
-                </div>
-
-                <div class="card mb-2 answer-card" onlclick="answer([${a2}, ${currentQuestion}])">
-                    <div class="card-body">
-                        ${a2}
-                    </div>
-                </div>
-
-                <div class="card mb-2 answer-card" onlclick="answer([${a3}, ${currentQuestion}])">
-                    <div class="card-body">
-                        ${a3}
-                    </div>
-                </div>
-
-                <div class="card mb-2 answer-card" onlclick="answer([${a4}, ${currentQuestion}])">
-                    <div class="card-body">
-                        ${a4}
-                    </div>
+                <div class="answer-holder" id="answer-holder">
+                     
                 </div>
 
                 <div class="card-footer">
                     <div class="progress">
-                        <span>${i}</span>
+                        <span>${y}</span>
                         /
                         <span><b>${questions.length}</b></span>
                     </div>
 
                     <button class="btn btn-primary">SKIP</button>
                 </div>
+            </div>
+        </div>
+    `;
+}
+
+
+function answersHTML([i, x, y]) {
+    return `
+        <div class="card mb-2 answer-card" onclick="answer([${i}, ${y}])">
+            <div class="card-body">
+                ${x}
+            </div>
+        </div>
+    `;
+}
+
+
+function endAnswer() {
+    return `
+        <div class="card mb-2 answer-card"">
+            <div class="card-body">
+                Holy shit!!!
             </div>
         </div>
     `;
