@@ -25,6 +25,17 @@ body {
     box-shadow: 3px 3px 15px #000;
 }
 
+.card-img-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top img{
+    height: 15rem;
+    object-fit: contain;
+}
+
 .answer-card:hover {
     cursor: pointer;
     background-color: var(--grey2-color);

@@ -4,7 +4,9 @@ function cardHolderHTML(i) {
     let y = i + 1;
     return `
         <div class="card main-card">
-            <img src="./img/cardheader.png" class="card-img-top">
+            <div class="card-img-top" id="card-img-top">
+
+            </div>
             
             <div class="card-body">
             
