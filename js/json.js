@@ -26,7 +26,7 @@ let questions = [
    {
        "frage": "Welches Fortbewegungsmittel wird hier verwendet",
        "answeres": ["Schlitten", "Auto", "Ski", "Snowboard"],
-       "lösung1": 2,
+       "lösung1": 3,
        "img": "./img/snowboard.jpg"
    },
    {
