@@ -22,7 +22,7 @@ body {
 .main-card {
     max-height: 90vh;
     overflow: overlay;
-    max-width: 100vw;
+    max-width: 400px;
     box-shadow: 3px 3px 15px #000;
 }
 
