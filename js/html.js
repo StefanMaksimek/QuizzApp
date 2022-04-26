@@ -7,7 +7,11 @@ function cardHolderHTML(i) {
             <div class="card-img-top" id="card-img-top">
 
             </div>
-            
+
+            <div class="progress-bar-holder">
+                <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+
             <div class="card-body">
             
                 <h5 class="card-title mb-3">
@@ -25,7 +29,6 @@ function cardHolderHTML(i) {
                         <span><b>${questions.length}</b></span>
                     </div>
 
-                    <button class="btn btn-primary">SKIP</button>
                 </div>
             </div>
         </div>
@@ -59,8 +62,12 @@ function endAnswer() {
 function finishedCardHolderHTML() {
     return `
         <div class="card main-card">
-            <div class="card-img-top" id="card-img-top">
-                <img src="./img/emoticon-2-512.png" alt="">
+            <div class="card-img-top p-4" id="card-img-top">
+                <img src="./img/sniper.jpg" alt="">
+            </div>
+
+            <div class="progress-bar-holder">
+                <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
             </div>
 
             <div class="card-body">
@@ -91,7 +98,7 @@ function createProofedAnswersHTML([a, b, c]) {
     
         <div class="proof-answer-holder" id="proof-answer-holder">
             <div class="card mb-2">
-                <div class="card-body">
+                <div class="card-body" id="${c + a}">
                     ${a}
                 </div>
             </div>

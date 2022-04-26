@@ -60,4 +60,7 @@ let questions = [
        "img": "./img/formel1.jpg"
    }
 ];
+
 let submittedAnswers = [];
+
+let rightAnswers = [];

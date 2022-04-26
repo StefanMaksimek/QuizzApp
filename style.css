@@ -35,7 +35,7 @@ body {
 
 .card-img-top img{
     object-fit: cover;
-    width: 100%;
+    height: 15rem;
 }
 
 .answer-card:hover {
@@ -76,4 +76,17 @@ body {
 
 .evaluation-card h5 {
     margin: 0 !important;
+}
+
+.bg-success, .bg-danger {
+    color: white;
+}
+
+.progress-bar-holder {
+    margin: 0.4rem;
+    display: flex;
+    height: 1.5rem;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
 }
